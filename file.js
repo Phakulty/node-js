@@ -1,5 +1,6 @@
 const fs = require('fs');
 
+// readfile
 // fs.readFile('./docs/blog.txt', (err, data) => {
 //     if (err) {
 //         console.log(err);
@@ -7,6 +8,7 @@ const fs = require('fs');
 //     console.log(data.toString());
 // })
 
+//writefile
 // fs.writeFile('./docs/blog.txt', 'hello, oyioha', () => {
 //     console.log('file was written');
 // });
@@ -14,6 +16,8 @@ const fs = require('fs');
 // fs.writeFile('./docs/blog.txt1', 'hello, oyioha', () => {
 //     console.log('file was written');
 // });
+
+// mkdir
 if (!fs.existsSync('./assets')){
     fs.mkdir('./assets', (err) => {
     if (err) {
